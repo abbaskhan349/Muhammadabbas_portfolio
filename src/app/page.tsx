@@ -1,3 +1,4 @@
+import CredentialsCard from "@/components/CredentialsCard";
 import { MenubarDemo } from "@/components/MenubarDemo";
 import ProfileCard from "@/components/ProfileCard";
 import { Button } from "@/components/ui/button"
@@ -23,8 +24,8 @@ export default function Home() {
   return (
     <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 space-y-8">
       <MenubarDemo />
-      <div>
-        {/* <Card className="w-[350px]">
+
+      {/* <Card className="w-[350px]">
           <CardHeader>
             <CardTitle>Create project</CardTitle>
             <CardDescription>Deploy your new project in one-click.</CardDescription>
@@ -34,8 +35,11 @@ export default function Home() {
           </CardContent>
 
         </Card> */}
+      <div className="flex gap-4 ">
         <ProfileCard />
+        <CredentialsCard />
       </div>
+
     </div>
   );
 }
