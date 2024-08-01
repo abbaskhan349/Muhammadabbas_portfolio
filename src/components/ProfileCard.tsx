@@ -4,12 +4,12 @@ import { cn } from "@/lib/utils";
 
 export default function ProfileCard() {
     return (
-        <Card className="max-w-[500 bg-white rounded-2xl border-none shadow flex justify-center items-center p-4">
+        <Card className="max-w-[500 bg-white rounded-3xl border-none shadow flex justify-center items-center p-4">
             <CardHeader className="p- w-1/2 rounded-br-2xl">
                 <div className="relative w-60 h-60 bg-blue-300 rounded-tl-2xl rounded-br-2xl">
                     <Image
                         className=" rounded-br-2xl "
-                        src="/mypicSmallreverted.png" // Replace with your image path
+                        src="/profilepic.png" // Replace with your image path
                         alt="David Henderson"
                         layout="fill"
                         objectFit="cover"

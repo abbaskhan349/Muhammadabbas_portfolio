@@ -108,7 +108,7 @@ export function MenubarDemo() {
                     </MenubarContent>
                 </MenubarMenu>
             </Menubar>
-            <Button>Let&apos;s Talk</Button>
+            <Button className="rounded-2xl px-6">Let&apos;s Talk</Button>
         </div>
     )
 }
