@@ -5,17 +5,17 @@ import { cn } from "@/lib/utils";
 export default function CredentialsCard() {
     return (
         <div className="flex flex-col gap-4 w-full">
-            <Card className="max-w-[500  bg-white rounded-3xl shadow border-none flex ">
+            <Card className="max-w-[500  bg-white rounded-3xl shado borde flex ">
                 <CardHeader className="">
                     <div className="text-sm text-gray-500 uppercase">Latest work featured here</div>
                 </CardHeader>
 
             </Card>
             <div className="flex gap-4 ">
-                <Card className=" bg-white w-full rounded-3xl shadow border-none flex flex-col">
+                <Card className=" bg-white w-full rounded-3xl shado border-no flex flex-col">
                     <CardHeader className="p-0">
-                    <div className="relative w-full h-32 p-0 flex items-center justify-center">
-                    <Image
+                        <div className="relative w-full h-32 p-0 flex items-center justify-center">
+                            <Image
                                 // className="rounded-t-lg"
                                 src="/sign.png" // Replace with your image path
                                 alt="David Henderson"
@@ -30,7 +30,7 @@ export default function CredentialsCard() {
 
                     </CardContent>
                 </Card>
-                <Card className="bg-white w-full rounded-3xl border-none shadow flex flex-col">
+                <Card className="bg-white w-full rounded-3xl border-no shad flex flex-col">
                     <CardHeader className="p-0">
                         <div className="relative w-full h-32 p-0">
                             <Image

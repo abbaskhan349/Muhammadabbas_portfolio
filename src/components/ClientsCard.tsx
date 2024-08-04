@@ -8,7 +8,7 @@ export default function ClientsCard() {
         <div className="">
 
             <div className="flex gap-6 ">
-                <Card className="bg-white w-1/2 rounded-3xl shadow p-12 border-none flex justify-between items-center">
+                <Card className="bg-white w-1/2 rounded-3xl shado p-12 -none flex justify-between items-center">
                     <CardContent className="flex flex-col items-center space-y-4 text-center">
                         <div className="text-4xl font-medium text-blue-500 uppercase">02</div>
                         <div className="text-xs font-medium text-gray-400 uppercase">Years Experience</div>
@@ -23,7 +23,7 @@ export default function ClientsCard() {
                     </CardContent>
                 </Card>
 
-                <Card className="bg-white w-1/2 rounded-3xl shadow border-none flex flex-col">
+                <Card className="bg-white w-1/2 rounded-3xl shado borde flex flex-col">
                     {/* <CardHeader className="px-20 h-32"> */}
                     <div className="relative w-32 h-20 p-0 ">
                         <Image
