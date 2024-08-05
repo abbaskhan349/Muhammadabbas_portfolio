@@ -4,6 +4,7 @@ import CredentialsCard from "@/components/CredentialsCard";
 import FontsServicesProfiles from "@/components/FontsServicesProfiles";
 import { MenubarDemo } from "@/components/MenubarDemo";
 import ProfileCard from "@/components/ProfileCard";
+import ProjectDetails from "@/components/ProjectDetails";
 import { SiteFooter } from "@/components/SiteFooter";
 import Works from "@/components/Works";
 
@@ -31,10 +32,13 @@ export default function Home() {
 
         {/* =============================== Works section ================ */}
 
-        <Works />
+        {/* <Works /> */}
+        {/* =============================== project details section ================ */}
 
 
       </div>
+      <ProjectDetails />
+
       <SiteFooter />
 
     </div>
