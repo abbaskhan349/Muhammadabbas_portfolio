@@ -5,6 +5,7 @@ import FontsServicesProfiles from "@/components/FontsServicesProfiles";
 import { MenubarDemo } from "@/components/MenubarDemo";
 import ProfileCard from "@/components/ProfileCard";
 import { SiteFooter } from "@/components/SiteFooter";
+import Works from "@/components/Works";
 
 
 export default function Home() {
@@ -26,7 +27,11 @@ export default function Home() {
 
         {/* =============================== About section ================ */}
 
-        <About />
+        {/* <About /> */}
+
+        {/* =============================== Works section ================ */}
+
+        <Works />
 
 
       </div>
