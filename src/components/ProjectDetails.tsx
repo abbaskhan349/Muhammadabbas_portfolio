@@ -173,12 +173,12 @@ export default function ProjectDetails() {
             <div className="flex items-center justify-center mt-10">
                 <Card className="bg-white rounded-3xl shadow w-52 pt-8 flex items-center justify-center">
                     <CardContent className="flex items-center justify-center flex-col">
-                        <CardTitle className="text-2xl font-medium text-blue-600 text-center mb-4">Next Project</CardTitle>
+                        <CardTitle className="text-2xl font-medium text-blue-600 text-center mb-4">
+                            Next Project
+                        </CardTitle>
                     </CardContent>
                 </Card>
             </div>
-
-
         </div>
 
     );

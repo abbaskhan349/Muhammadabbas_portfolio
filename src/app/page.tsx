@@ -17,14 +17,13 @@ export default function Home() {
 
         {/* =============================== Home section ================ */}
 
-        {/* <div className="flex gap-4 ">
+        <div className="flex gap-4 ">
           <ProfileCard />
           <CredentialsCard />
-
         </div>
         <FontsServicesProfiles />
 
-        <ClientsCard /> */}
+        <ClientsCard />
 
         {/* =============================== About section ================ */}
 
@@ -37,7 +36,7 @@ export default function Home() {
 
 
       </div>
-      <ProjectDetails />
+      {/* <ProjectDetails /> */}
 
       <SiteFooter />
 
