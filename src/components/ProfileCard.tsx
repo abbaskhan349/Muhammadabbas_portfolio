@@ -1,10 +1,15 @@
+'use client'
 import Image from "next/image";
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export default function ProfileCard() {
+    const router = useRouter();
     return (
-        <Card className="max-w-[500 bg-white rounded-3xl borde shadow-none flex justify-center items-center p-4">
+        <Card
+            onClick={() => router.push('/about')}
+            className="max-w-[500 bg-white rounded-3xl borde shadow-none flex justify-center items-center p-4 cursor-pointer">
             <CardHeader className="p- w-1/2 rounded-br-2xl">
                 <div className="relative w-60 h-60 bg-blue-300 rounded-tl-2xl rounded-br-2xl">
                     <Image

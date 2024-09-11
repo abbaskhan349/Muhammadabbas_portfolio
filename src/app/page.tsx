@@ -16,30 +16,23 @@ export default function Home() {
         <MenubarDemo />
 
         {/* =============================== Home section ================ */}
-
         <div className="flex gap-4 ">
           <ProfileCard />
           <CredentialsCard />
         </div>
         <FontsServicesProfiles />
-
         <ClientsCard />
 
         {/* =============================== About section ================ */}
-
         {/* <About /> */}
 
         {/* =============================== Works section ================ */}
-
         {/* <Works /> */}
+
         {/* =============================== project details section ================ */}
-
-
+            {/* <ProjectDetails /> */}
       </div>
-      {/* <ProjectDetails /> */}
-
       <SiteFooter />
-
     </div>
   );
 }

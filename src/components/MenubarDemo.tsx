@@ -1,3 +1,4 @@
+'use client'
 import {
     Menubar,
     MenubarCheckboxItem,
@@ -14,27 +15,29 @@ import {
     MenubarTrigger,
 } from "@/components/ui/menubar"
 import { Button } from "./ui/button"
+import { useRouter } from "next/navigation"
 
 export function MenubarDemo() {
+    const router = useRouter();
     return (
         <div className="flex justify-between p-4">
-            <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+            <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0" >
                 Muhammad Abbas
             </h2>
             <Menubar className=" rounded-none border-0">
                 <MenubarMenu>
-                    <MenubarTrigger>Home</MenubarTrigger>
+                    <MenubarTrigger onClick={() => router.push('/')}>Home</MenubarTrigger>
 
                 </MenubarMenu>
                 <MenubarMenu>
-                    <MenubarTrigger>About</MenubarTrigger>
+                    <MenubarTrigger onClick={() => router.push('/about')}>About</MenubarTrigger>
                 </MenubarMenu>
                 <MenubarMenu>
-                    <MenubarTrigger>Works</MenubarTrigger>
+                    <MenubarTrigger onClick={() => router.push('/works')}>Works</MenubarTrigger>
 
                 </MenubarMenu>
                 <MenubarMenu>
-                    <MenubarTrigger>Contact</MenubarTrigger>
+                    <MenubarTrigger onClick={() => router.push('/contact')}>Contact</MenubarTrigger>
 
                 </MenubarMenu>
             </Menubar>

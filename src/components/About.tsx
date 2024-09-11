@@ -23,11 +23,7 @@ export default function About() {
 
                 </Card>
                 <div className="flex w-2/3 flex-col gap-4">
-
-
                     <CardTitle className="text-7xl font-semibold tracking-wide uppercase">Self-Summary</CardTitle>
-
-
                     <Card className="bg-white w-full rounded-3xl border-no shad flex flex-col">
                         <div className="relative w-32 h-20 p-0 ">
                             <Image
@@ -39,59 +35,49 @@ export default function About() {
                         </div>
                         <CardContent className="flex flex-col items-start p-10 space-y-2">
                             <CardTitle className="text-3xl font-medium tracking-wide">Muhammad Abbas</CardTitle>
-                            <div className="text-gray-400 tracking-wide">I am a Islamabad-based Web Developer
+                            <div className="text-gray-400 tracking-wide">
+                                I am a Islamabad-based Web Developer
                                 with a focus on Dashboard development, Point-of-Sale, CRM Software development. I have a diverse range
-                                of experience having worked across various fields and industries.</div>
-
+                                of experience having worked across various fields and industries.
+                            </div>
                         </CardContent>
                     </Card>
-
-
                 </div>
-
-
             </div>
             <div className="flex gap-6">
-
-
-
-
                 <Card className="bg-white w-full rounded-3xl border-no shad flex flex-col">
-
                     <CardContent className="flex flex-col items-start p-10 space-y">
                         <CardTitle className="text-lg font-medium uppercase mb-4">Experience</CardTitle>
-
                         <div className="text-gray-400 font-medium">2007 - 2017</div>
-                        <CardTitle className="text-lg font-medium text-blue-400 mt-2">Framer Designer & Developer</CardTitle>
+                        <CardTitle className="text-lg font-medium text-blue-400 mt-2">
+                            Framer Designer & Developer
+                        </CardTitle>
                         <div className="text-gray-400 mb-4">Bluebase Designs</div>
-
                         <div className="text-gray-400 font-medium">2007 - 2017</div>
-                        <CardTitle className="text-lg font-medium text-blue-400 mt-2">Framer Designer & Developer</CardTitle>
+                        <CardTitle className="text-lg font-medium text-blue-400 mt-2">
+                            Framer Designer & Developer
+                        </CardTitle>
                         <div className="text-gray-400 ">Bluebase Designs</div>
                     </CardContent>
                 </Card>
-
-
                 <Card className="bg-white w-full rounded-3xl border-no shad flex flex-col">
-
                     <CardContent className="flex flex-col items-start p-10 space-y">
                         <CardTitle className="text-lg  font-medium uppercase mb-4">Education</CardTitle>
-
                         <div className="text-gray-400 font-medium">2007 - 2017</div>
-                        <CardTitle className="text-lg font-medium text-blue-400 mt-2">Framer Designer & Developer</CardTitle>
+                        <CardTitle className="text-lg font-medium text-blue-400 mt-2">
+                            Framer Designer & Developer
+                        </CardTitle>
                         <div className="text-gray-400 mb-4">Bluebase Designs</div>
-
                         <div className="text-gray-400 font-medium">2007 - 2017</div>
-                        <CardTitle className="text-lg font-medium text-blue-400 mt-2">Framer Designer & Developer</CardTitle>
+                        <CardTitle className="text-lg font-medium text-blue-400 mt-2">
+                            Framer Designer & Developer
+                        </CardTitle>
                         <div className="text-gray-400 ">Bluebase Designs</div>
                     </CardContent>
                 </Card>
-
             </div>
             <FontsServicesProfiles />
-
             {/* <ClientsCard /> */}
         </div>
-
     );
 }
