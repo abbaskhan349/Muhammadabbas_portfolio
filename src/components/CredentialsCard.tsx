@@ -1,8 +1,11 @@
+'use client'
 import Image from "next/image";
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export default function CredentialsCard() {
+    const router = useRouter();
     return (
         <div className="flex flex-col gap-4 w-full">
             <Card className="max-w-[500  bg-white rounded-3xl shado borde flex ">
@@ -12,7 +15,10 @@ export default function CredentialsCard() {
 
             </Card>
             <div className="flex gap-4 ">
-                <Card className=" bg-white w-full rounded-3xl shado border-no flex flex-col">
+                <Card
+                    onClick={() => router.push('/credentials')}
+                    className=" bg-white w-full rounded-3xl shado border-no flex flex-col cursor-pointer"
+                >
                     <CardHeader className="p-0">
                         <div className="relative w-full h-32 p-0 flex items-center justify-center">
                             <Image
@@ -24,13 +30,17 @@ export default function CredentialsCard() {
                             />
                         </div>
                     </CardHeader>
-                    <CardContent className="flex flex-col items-start p-10 space-y-2">
+                    <CardContent
+                        className="flex flex-col items-start p-10 space-y-2"
+                    >
                         <div className="text-xs font-medium text-gray-400 uppercase">More About me</div>
                         <CardTitle className="text-xl font-">Credentials</CardTitle>
-
                     </CardContent>
                 </Card>
-                <Card className="bg-white w-full rounded-3xl border-no shad flex flex-col">
+                <Card
+                    onClick={() => router.push('/works')}
+                    className="bg-white w-full rounded-3xl border-no shad flex flex-col cursor-pointer"
+                >
                     <CardHeader className="p-0">
                         <div className="relative w-full h-32 p-0">
                             <Image

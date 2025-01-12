@@ -1,16 +1,21 @@
+'use client'
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 
 interface ProjectCardProps {
+    router: any;
     imageSrc: string;
     title: string;
     subtitle: string;
     iconSrc: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, subtitle, iconSrc }) => (
-    <Card className="w-1/ bg-white rounded-3xl borde shadow-none flex flex-col p-">
+const ProjectCard: React.FC<ProjectCardProps> = ({ router, imageSrc, title, subtitle, iconSrc }) => (
+    <Card
+    onClick={() => router.push('/projectDetails')}
+    className="w-1/ bg-white rounded-3xl borde shadow-none flex flex-col p- cursor-pointer">
         <CardHeader className="rounded-">
             <div className="relative w-80 h-80 bg-blue-400 rounded-3xl">
                 <Image
@@ -40,6 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, subtitle, ic
 );
 
 const Works: React.FC = () => {
+    const router = useRouter();
     const projects = [
         { imageSrc: "/project1.jpeg", title: "Dynamic", subtitle: "web designing", iconSrc: "/icon-2.svg" },
         { imageSrc: "/project2.jpeg", title: "Diesel H1", subtitle: "photography", iconSrc: "/icon-2.svg" },
@@ -54,14 +60,14 @@ const Works: React.FC = () => {
             <div className="flex gap-6">
                 <div className="flex flex-col gap-6">
                     {projects.slice(0, 2).map((project, index) => (
-                        <ProjectCard key={index} {...project} />
+                        <ProjectCard router={router} key={index} {...project} />
                     ))}
                 </div>
                 <div className="flex w-2/ flex-col gap-6">
                     <CardTitle className="text-7xl font-semibold tracking-wide uppercase">All Projects</CardTitle>
                     <div className="grid grid-cols-2 gap-6">
                         {projects.slice(2).map((project, index) => (
-                            <ProjectCard key={index} {...project} />
+                            <ProjectCard router={router} key={index} {...project} />
                         ))}
                     </div>
                 </div>
