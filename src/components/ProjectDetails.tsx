@@ -170,10 +170,10 @@ export default function ProjectDetails() {
                 />
             </div>
 
-            <div className="flex items-center justify-center mt-10">
-                <Card className="bg-white rounded-3xl shadow w-52 pt-8 flex items-center justify-center">
+            <div className="flex items-center justify-center">
+                <Card className="bg-white rounded-3xl w-72 pt-8 flex items-center justify-center mt-16">
                     <CardContent className="flex items-center justify-center flex-col">
-                        <CardTitle className="text-2xl font-medium text-blue-600 text-center mb-4">
+                        <CardTitle className="text-4xl font-medium text-blue-400 cursor-pointer hover:text-black text-center mb-4">
                             Next Project
                         </CardTitle>
                     </CardContent>

@@ -1,9 +1,12 @@
+'use client'
 import Image from "next/image";
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { IconBallBasketball, IconBrandTwitter, IconBrush, IconCamera, IconCircles, IconDeviceLaptop } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
 
 export default function FontsServicesProfiles() {
+    const router = useRouter();
     return (
         <div className="">
 
@@ -25,7 +28,10 @@ export default function FontsServicesProfiles() {
                         <CardTitle className="text-xl font-">GFonts</CardTitle>
                     </CardContent>
                 </Card>
-                <Card className="bg-white w-1/2 rounded-3xl shado border-no flex flex-col">
+                <Card
+                    className="bg-white w-1/2 rounded-3xl shado border-no flex flex-col cursor-pointer"
+                    onClick={() => router.push('/services')}
+                >
                     <CardHeader className="px-20 h-32">
                         <div className="relative w-full h-full pt-8 flex justify-between items-center">
                             <IconCamera stroke={1.5} color="#5B78F6" height={'48'} width={'48'} />
