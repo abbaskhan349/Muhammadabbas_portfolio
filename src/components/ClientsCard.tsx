@@ -4,12 +4,14 @@ import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
 import { cn } from "@/lib/utils";
 import { IconBallBasketball, IconBrandTwitter, IconBrush, IconCamera, IconCircles } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { SparkleLine } from "./Sparke-line";
 
 export default function ClientsCard() {
-    const router = useRouter()
+    const router = useRouter();
+    const [hoveredCard, setHoveredCard] = useState<string | null>(null);
     return (
         <div className="">
-
             <div className="flex gap-6 ">
                 <Card className="bg-white w-1/2 rounded-3xl shado p-12 -none flex justify-between items-center">
                     <CardContent className="flex flex-col items-center space-y-4 text-center">
@@ -25,9 +27,12 @@ export default function ClientsCard() {
                         <div className="text-xs font-medium text-gray-400 uppercase">Total Projects</div>
                     </CardContent>
                 </Card>
-
-                <Card className="bg-white w-1/2 rounded-3xl shado borde flex flex-col cursor-pointer" onClick={() => router.push('/contact')}>
-                    {/* <CardHeader className="px-20 h-32"> */}
+                <Card
+                    className="bg-white w-1/2 rounded-3xl shado borde flex flex-col cursor-pointer"
+                    onClick={() => router.push('/contact')}
+                    onMouseEnter={() => setHoveredCard('card1')}
+                    onMouseLeave={() => setHoveredCard(null)}
+                >
                     <div className="relative w-32 h-20 p-0 ">
                         <Image
                             src="/icon2-2.png" // Replace with your image path
@@ -36,12 +41,13 @@ export default function ClientsCard() {
                             objectFit="contain"
                         />
                     </div>
-                    {/* </CardHeader> */}
-                    <CardContent className="flex flex-col items-start pt-4 space-y-2 px-8 pb-12">
-                        <CardTitle className="text-4xl font-semibold">Let&apos;s</CardTitle>
-                        <CardTitle className="text-4xl font-semibold">Work <span className="text-blue-400">toghether</span></CardTitle>
-
-                    </CardContent>
+                    <div className="flex items-center justify-between pt-10">
+                        <CardContent className="flex flex-col items-start pt-4 space-y-2 px-8 pb-12">
+                            <CardTitle className="text-4xl font-semibold">Let&apos;s</CardTitle>
+                            <CardTitle className="text-4xl font-semibold">Work <span className="text-blue-400">toghether</span></CardTitle>
+                        </CardContent>
+                        <SparkleLine hovered={hoveredCard === 'card1'} />
+                    </div>
                 </Card>
             </div>
 
