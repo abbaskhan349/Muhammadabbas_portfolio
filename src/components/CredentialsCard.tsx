@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
+import { SparkleLine } from "./Sparke-line";
 
 export default function CredentialsCard() {
     const router = useRouter();
@@ -30,12 +31,18 @@ export default function CredentialsCard() {
                             />
                         </div>
                     </CardHeader>
-                    <CardContent
-                        className="flex flex-col items-start p-10 space-y-2"
-                    >
-                        <div className="text-xs font-medium text-gray-400 uppercase">More About me</div>
-                        <CardTitle className="text-xl font-">Credentials</CardTitle>
-                    </CardContent>
+                    <div className="flex items-center">
+                        <CardContent
+                            className="flex flex-col items-start p-10 space-y-2"
+                        >
+                            <div className="text-xs font-medium text-gray-400 uppercase">More About me</div>
+                            <CardTitle className="text-xl font-">Credentials</CardTitle>
+                        </CardContent>
+                        <div className=" ">
+                            <SparkleLine />
+                        </div>
+
+                    </div>
                 </Card>
                 <Card
                     onClick={() => router.push('/works')}

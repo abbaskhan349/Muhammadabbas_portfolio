@@ -11,7 +11,10 @@ export default function FontsServicesProfiles() {
         <div className="">
 
             <div className="flex gap-6 ">
-                <Card className=" bg-white w-1/4 rounded-3xl shado border-no flex flex-col">
+                <Card
+                    className="bg-white w-1/4 rounded-3xl shado border-no flex flex-col cursor-pointer"
+                    onClick={() => router.push('/blog')}
+                >
                     <CardHeader className="p-0">
                         <div className="relative w-full h-32 p-0 flex items-center justify-center">
                             <Image
@@ -46,7 +49,9 @@ export default function FontsServicesProfiles() {
                     </CardContent>
                 </Card>
 
-                <Card className=" bg-white w-1/4 rounded-3xl shado border-no flex flex-col">
+                <Card
+                    className=" bg-white w-1/4 rounded-3xl shado border-no flex flex-col cursor-pointer"
+                    onClick={() => router.push('/contact')}>
                     <CardHeader className="px-20 h-32">
                         <div className="relative w-full h-full pt-8 flex justify-between items-center">
                             <IconBallBasketball stroke={1.5} color="#5B78F6" height={'48'} width={'48'} />

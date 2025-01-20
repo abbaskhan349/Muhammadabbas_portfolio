@@ -1,9 +1,12 @@
+'use client'
 import Image from "next/image";
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { IconBallBasketball, IconBrandTwitter, IconBrush, IconCamera, IconCircles } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
 
 export default function ClientsCard() {
+    const router = useRouter()
     return (
         <div className="">
 
@@ -23,7 +26,7 @@ export default function ClientsCard() {
                     </CardContent>
                 </Card>
 
-                <Card className="bg-white w-1/2 rounded-3xl shado borde flex flex-col">
+                <Card className="bg-white w-1/2 rounded-3xl shado borde flex flex-col cursor-pointer" onClick={() => router.push('/contact')}>
                     {/* <CardHeader className="px-20 h-32"> */}
                     <div className="relative w-32 h-20 p-0 ">
                         <Image
